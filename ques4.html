@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function Animal(name,weight) {
+    function Animal(name, weight) {
         this.name = name;
         this.weight = weight;
         this.setName = function (name) {
@@ -25,9 +25,10 @@
             return "name is " + this.name + " and weight is " + this.weight;
         }
     }
+
     let objAnimal1 = new Animal();
-    objAnimal1.name = "Elephant";
-    objAnimal1.weight = 45.6;
+    objAnimal1.setName("Elephant");
+    objAnimal1.setWeight(45.6);
     document.write(objAnimal1.toString());
 
     let objAnimal2 = new Animal("Cat", 38.5);

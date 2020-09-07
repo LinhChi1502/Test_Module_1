@@ -6,7 +6,7 @@
 </head>
 <body>
 <script>
-    function findIndex(item,array) {
+    function findIndex(item, array) {
         for (let i = 0; i < array.length; i++) {
             if (array[i] === item) {
                 return array.indexOf(item);
@@ -14,9 +14,10 @@
         }
         return "Không thuộc mảng";
     }
+
     let arr = [2, 3, 8, 9, 15];
-    let num = prompt("Enter your number: ")
-    let result = findIndex(num,arr);
+    let num = prompt("Enter your number: ");
+    let result = findIndex(num, arr);
     document.write(result);
 </script>
 </body>
