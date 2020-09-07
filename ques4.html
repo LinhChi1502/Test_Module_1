@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ques4</title>
+</head>
+<body>
+<script>
+    function Animal(name,weight) {
+        this.name = name;
+        this.weight = weight;
+        this.setName = function (name) {
+            this.name = name;
+        }
+        this.setWeight = function (weight) {
+            this.weight = weight;
+        }
+        this.getName = function () {
+            return this.name;
+        }
+        this.getWeight = function () {
+            return this.weight;
+        }
+        this.toString = function () {
+            return "name is " + this.name + " and weight is " + this.weight;
+        }
+    }
+    let objAnimal1 = new Animal();
+    objAnimal1.name = "Elephant";
+    objAnimal1.weight = 45.6;
+    document.write(objAnimal1.toString());
+
+    let objAnimal2 = new Animal("Cat", 38.5);
+    objAnimal2.setName("Mouse");
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 2</title>
+</head>
+<body>
+<script>
+    function findIndex(item,array) {
+        for (let i = 0; i < array.length; i++) {
+            if (array[i] === item) {
+                return array.indexOf(item);
+            }
+        }
+        return "Không thuộc mảng";
+    }
+    let arr = [2, 3, 8, 9, 15];
+    let num = 8;
+    let result = findIndex(num,arr);
+    document.write(result);
+</script>
+</body>
+</html>
